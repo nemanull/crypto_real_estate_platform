@@ -26,7 +26,7 @@ npm i
 
 ### Environment Configuration
 
-Create the following `.env` files in their respective directories:
+Create or use the following `.env` files in their respective directories:
 
 #### Front-end Environment (front/.env)
 
