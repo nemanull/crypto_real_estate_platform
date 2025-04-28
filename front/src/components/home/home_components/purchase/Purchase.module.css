@@ -1,0 +1,133 @@
+.purchaseOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.purchaseModal {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    color: #333;
+    font-family: "Inter", sans-serif;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    line-height: 1;
+}
+.closeButton:hover {
+    color: #333;
+}
+
+.purchaseModal h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 24px;
+}
+
+.purchaseModal p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    word-wrap: break-word;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.amountInput {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.amountInput:focus {
+    outline: none;
+    border-color: #FB8C00;
+    box-shadow: 0 0 0 2px rgba(251, 140, 0, 0.2);
+}
+
+.costDisplay {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.errorMessage {
+    color: #D32F2F;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.statusMessage {
+    color: #0277BD;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.purchaseButton {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #FB8C00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+}
+
+.purchaseButton:hover:not(:disabled) {
+    background-color: #e67e00;
+}
+
+.purchaseButton:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+.purchaseButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
